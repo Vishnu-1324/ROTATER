@@ -2,7 +2,7 @@
 import { GoogleGenAI, Type, Chat, Modality } from "@google/genai";
 import { ClimateStats, Prediction, NewsResult, MapResult, GroundingSource, BoundingBox, Calamity } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || 'FAKE_API_KEY_FOR_DEVELOPMENT' });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export interface ResolvedLocation {
   lat: number;
